@@ -1,0 +1,71 @@
+Stadtteil,Einrichtung,Träger,KiTa Leitung,Straße,PLZ,Telefon,Öffnungszeiten,Plätze,Krippen-Gruppen (0-3 J.),Kindergarten Gruppen (3-6 J.),Hort-Gruppen (6-14 J.),Altersgem. -Gruppen (1-6 J.),Natur-Gruppen (3-6 J.),I-Gruppen,Gruppen,Mittagessen,Bemerkungen
+Altstadt,Kinderhaus,DKSB,Frau Droemert,Marientreppe 10,24939,3132978,07:30-16:30,60,1,1,1,1,0,0,4,X,
+Neustadt,Nystadens Børne- og Ungdomshus,Sydslesvigs danske Ungdomsforeninger,Herr Mülhausen,Junkerhohlweg 20,24939,43136,11:30-18:00,75,0,0,4,0,0,0,4,X,
+Neustadt,Neustadt,Stadt,Herr Hoffmann,Jens-Due-Weg 2,24939,852157,07:00-19:00,133,0,2,5,0,1,0,8,X,Naturgr. bis 16.00 im Wald und am Strand
+Neustadt,Duborg Børnehave,Dansk Skoleforening for Sydslesvig e.V.,Frau Madsen,Ritterstr. 5,24939,29823,07:15-15:15,40,0,2,0,0,0,0,2,Nein,
+Nordstadt,"Kita am Ostseebad ""Städtische Kneipp©-Kita""",Stadt,Frau Singer,Apenrader Str. 160,24939,851211,07:00-16:00,130,2,4,0,2,0,0,8,X,Kneipp-Kita
+Nordstadt,Sortevejs Børne- og Ungdomshus,Sydslesvigs danske Ungdomsforeninger,Herr Wolhardt,Cornelius-Hansen-Weg 3,24939,42994,11:30-18:00,90,0,0,5,0,0,0,5,X,
+Nordstadt,Alter Kupfermühlenweg,Stadt,Herr Hoffmann,Alter Kupfermühlenweg 26,24939,852243,07:30-15:30,65,0,1,0,2,1,0,4,X,"Naturgr. im Wald, Strand und Gartenkolonie"
+Nordstadt,Ingrid-Hjemmet,Dansk Skoleforening for Sydslesvig e.V.,Frau Kaack Johansen,Alter Kupfermühlenweg 37,24939,41340,07:00-16:00,60,0,3,0,0,0,0,3,Nein,
+Nordstadt,KiTa Sol-Lie,Adelby1 Kinder- und Jugenddienste gGmbH,Herr Petri,Meisenstr. 15,24939,4902022,07:00-15:30,75,0,3,0,0,1,1,5,X,"Naturgr. Park Sol-Lie,"
+Nordstadt,Schulgasse,ADS,Frau Stühr,Schulgasse 6,24939,41708,07:00-16:00,55,0,2,0,1,0,0,3,X,
+Nordstadt,Nystadens Vuggestue,Dansk Skoleforening for Sydslesvig e.V.,Frau Asmussen,Batteriestr. 19,24939,3186294,07:00-16:00,30,3,0,0,0,0,0,3,X,
+Nordstadt,kl. Nordstädter,gemeins. Wachsen e. V.,Frau Grasmück,Alter Kupfermühlenweg 99,24939,50092180,07:00-16:00,25,1,0,0,0,1,0,2,X,"Naturgr. Gartenkolonie 4a, Kluesrieser Weg"
+Nordstadt,Familienhaus an der Bergmühle,Adelby1 Kinder- und Jugenddienste gGmbH,Frau Thürnau,Bauer Landstr. 19,24939,48164916,07:00-15:30,20,2,0,0,0,0,0,2,X,
+Westliche Höhe,St. Marien KiTa,Malteser Norddeutschland gGmbH,Frau Minkowski,Norderallee 10,24939,581074,06:30-17:00,70,2,2,0,1,0,0,5,X,
+Westliche Höhe,Skovgade Børnehave,Dansk Skoleforening for Sydslesvig e.V.,Frau Timm Tygesen,Waldstr. 46,24939,54702,07:00-16:00,80,0,4,0,0,0,0,4,Nein,
+Westliche Höhe,St. Gertrud,Kirche,Frau Alsen-Falk,Marienhölzungsweg 51,24939,54282,07:30-14:30,55,0,2,0,1,0,0,3,X,
+Westliche Höhe,Kapernaum,Diako,Frau Johannsen,Marienhölzungsweg 23,24939,8122140,06:00-18:00,200,5,6,2,0,0,0,13,X,
+Westliche Höhe,Waldkiga,Waldkiga Flbg. e. V.,Frau Jäger,Marienstr. 29/31,24937,9092647,08:30-13:00,18,0,0,0,0,1,0,1,Nein,Wald: Marienhölzung
+Westliche Höhe,Vesterallee Børnehave,Dansk Skoleforening for Sydslesvig e.V.,Frau Geipel-Jorde,Westerallee 114,24937,52850,07:00-16:00,40,0,2,0,0,0,0,2,Nein,
+Westliche Höhe,Villa Käthe,KJSH Stiftung,Herr Erfurt,Roonstraße 3,24937,48086455,07:00-17.00,65,1,2,0,1,0,0,4,X,
+Friesischer Berg,St. Michael,Kirche,Frau Sigaard-Madsen,Marienallee 25,24937,51365,07:00-16:00,75,2,2,0,0,0,1,5,X,
+Friesischer Berg,Stuhrsallee,Stadt,Frau Tatzel,Stuhrsallee 16/18,24937,852773,07:00-17:00,150,1,4,3,1,0,0,9,X,
+Friesischer Berg,KiTa Marienallee,Adelby1 Kinder- und Jugenddienste gGmbH,Frau Rehm,Robert-Koch-Str. 3,24937,4307162,07:00-15:30,55,4,0,0,0,1,0,5,X,Naturgr. im Naturgelände bei HAS
+Friesischer Berg,KiTa Marienallee,Adelby1 Kinder- und Jugenddienste gGmbH,Frau Rehm,Friesische Str. 150,24937,1508051,07:00-15:30,55,4,0,0,0,1,0,5,X,Naturgr. im Naturgelände bei HAS
+Friesischer Berg,Hofkita Boreasmühle,Hofkita Boreasmühleg gGmbH,Frau Stein,Boreasmühle 8,24937,1702428972,07:30-14:30,42,1,0,0,0,2,0,3,X,auch Naturgruppen
+Weiche,Oksevejens Børnehave,Dansk Skoleforening for Sydslesvig e.V.,kommisarische Leitung Frau Paulsen,Alter Husumer Weg 207,24941,91486,07:00-16:00,80,2,3,0,0,0,0,5,X,
+Weiche,Integrative Kneipp-Kita,Stadt,Frau Kehlitz,Bahnstr. 2,24941,852890,07:00-16:00,85,1,0,0,3,1,1,6,X,Kneipp-Kita; Naturgr. im Waldstück Mückenteich
+Weiche,Weiche,Kirche,Frau Struve-Flor,An der Friedenskirche 20,24941,91664,07:30-15:30,35,0,1,0,1,0,0,2,X,
+Weiche,Arche Kunterbunt,Arche Flbg. im Mühlheimer Verband freikirchlich evangelischer Gemeinden Nordwestbund e. V.,Frau Peter,Nikolaus-Matthiesen-Str. 2,24941,91702,07:30-14:00,30,1,1,0,0,0,0,2,X,
+Weiche,Am Sophienhof,Stadt,Frau Kumke-Diehe,Graf-Zeppelin-Str. 16,24941,851576,05:45-19:00,60,0,0,0,4,0,0,4,X,
+Weiche,FH Weiche,Kirche,Frau Nicolaisen,Abt-Nikolaus-Pfad 3,24941,8400503,07:00-16:00,80,2,3,0,0,0,0,5,X,
+Südstadt,Julie Ramsing Børnehave,Dansk Skoleforening for Sydslesvig e.V.,Frau Schramm,Martinsberg 1,24941,27290,07:15-15:15,40,0,2,0,0,0,0,2,Nein,
+Südstadt,Paulus Kindergarten,Kirche,Frau Petersen,Tegelbarg 5,24941,96792,07:00-15:00,40,0,2,0,0,0,0,2,X,Spätestens bis 15:00 abholen
+Südstadt,Krippe Paulinchen,Kirche,Frau Petersen,Husumer Str. 44,24941,48160710,07:00-15:00,20,2,0,0,0,0,0,2,X,Spätestens bis 15:00 abholen
+Südstadt,Waldorfkindergarten,Verein zur Förderung der Waldorfpädagogik Flbg. e.V.,Frau Zydeck,Valentiner Allee 1,24941,9032523,07:30-15:30,120,2,4,1,0,0,0,7,X,Spätestens bis 16.00 abholen
+Sandberg,KiTa Preesterbarg,Adelby1 Kinder- und Jugenddienste gGmbH,Frau Feddersen,Preesterbarg 20 a,24943,670360,07:00-16:30,105,1,4,0,0,0,3,8,X,
+Sandberg,Skt. Hans Børnehave,Dansk Skoleforening for Sydslesvig e.V.,Frau Stark,An der Johannismühle 3,24943,25554,07:15-15:15,40,0,2,0,0,0,0,2,Nein,
+Sandberg,An der Joh.mühle,Kirche,Frau Kindel,An der Johannismühle 6,24943,28640,07:00-16:00,70,0,2,0,0,0,2,4,X,
+Sandberg,Studentenwerk,Studentenwerk S-H,Herr Philippi,Thomas-Fincke-Str. 1,24943,65831,08:00-16:00,45,1,1,0,1,0,0,3,X,ab 07:00 bis 08:00 und ab 16:00 bis 17:00 Randzeiten
+Sandberg,Kinderinsel,Kinderinsel e. V.,Frau Graudenz,Adelbylund 20,24943,5053413,07:00-16:00,80,2,0,0,4,0,0,6,X,
+Sandberg,Schwedenheim,Stadt,Frau Geißler,Helenenallee 17,24937,852375,07:30-16:00,66,0,2,0,2,0,0,4,X,
+Sandberg,KiTa im Hof,KJSH Stiftung,Herr Erfurt,Adelbylund 4,24943,80705395,07:00-17:00,30,0,0,0,2,0,0,2,X,
+Sandberg,KiTa Freiland,Adelby1 Kinder- und Jugenddienste gGmbH,Frau Wiebe,Freiland 26,24937,40680732,07:30-16:00,36,2,0,0,0,1,0,3,X,Naturgruppe auf dem Campusgelände
+Jürgensby,Jørgensby Børnehave,Dansk Skoleforening for Sydslesvig e.V.,Frau Schumacher,Bachstr. 9,24943,26720,07:00-17:00,40,0,2,0,0,0,0,2,Nein,
+Jürgensby,Johannisstraße,Stadt,Frau Geißler,Johannisstr. 9,24937,852366,07:30-15:30,40,0,2,0,0,0,0,2,X,
+Jürgensby,Lyksborggades Børne-og Ungdomshus,Sydslesvigs danske Ungdomsforeninger,Herr Greffrath,Glücksburgerstr 20,24943,26592,11:30-18:00,106,0,0,6,6,0,0,6,X,
+Jürgensby,KiTa Hafenkinder,Adelby1 Kinder- und Jugenddienste gGmbH,Frau Sischka,Angelburger Str. 75/77,24937,50528536,07:30-15:30,25,1,0,0,0,0,0,2,X,
+Fruerlund,KiTa Bullerbü,Adelby1 Kinder- und Jugenddienste gGmbH,Frau Kienaß,Schleibogen 6,24943,40683960,07:00-15:30,70,1,1,1,1,2,0,5,X,
+Fruerlund,Kindernest Fruerlund,Kindernest Fruerlund e.V.,Frau Gritzki,Schleibogen 2,24943,8403995,07:30-14:00,10,1,0,0,0,0,0,1,X,
+Fruerlund,KiTa Kinderkiste,Adelby1 Kinder- und Jugenddienste gGmbH,Frau Erichsen,Travestr. 4-6,24943,16068921,07:00-15:30,35,2,1,0,0,0,0,3,X,
+Mürwik,Fjordvejens Børnehave,Dansk Skoleforening for S,Kommisarische Leitung Frau Messerschmidt,Kiefernweg 118,24944,37390,07:30-15:30,40,0,2,0,0,0,0,2,Nein,
+Mürwik,Süderlücke,ADS,Frau Hinrichsen,Süderlücke 14,24944,34225,07:00-16:00,80,0,4,0,0,0,0,4,X,
+Mürwik,Mürwik,Kirche,Herrr Thomas Droemert,Fördestr. 2,24944,37169,07:00-16:00,75,0,3,0,0,0,1,4,X,
+Mürwik,Kilseng Børnehave,Dansk Skoleforening for Sydslesvig e.V.,Frau Heinsen,Mürwiker Str. 153,24944,30378,07:15-15:15,55,0,3,0,0,0,0,3,Nein,
+Mürwik,Breedlandweg,ADS,Frau Köppke,Breedlandweg 6,24944,35036,07:00-16:00,50,1,2,0,0,0,0,3,X,
+Mürwik,Fruerlund,Stadt,Frau Rux,Fruerlunder Str. 64,24943,852434,07:00-16:00,68,1,2,0,0,1,0,4,X,Naturgr. im Volkspark
+Mürwik,Kinder(t)raum,Kinder(t)raum,Frau Krause,Mürwiker Str. 128,24943,9993829,06:30-18:00,70,2,1,0,0,2,0,5,X,Naturgr. in Gartenkolonie Fördeblick
+Mürwik,Alle von Anfang an,Lebenshilfe gGmbH,Frau Knutzen-Johannsen,Osterallee 194,24944,50548992,07:30-15:30,10,1,0,0,0,0,0,1,X,
+Mürwik,Ostsee-Kinderhaus Flensburg,Ostseeschule Flbg. gGmbH,Frau Klein-Wißmann u. Herr ten Haaf,Klosterholzweg 32,24944,15150731788,07:00-17:00,151,2,2,5,0,1,0,10,X,
+Mürwik,Mürwiker Garten,ADS,Frau Reuter,Wasserlooser Weg 2,24943,31551020,07:00-16:00,50,1,2,0,0,0,0,3,X,
+Engelsby,Engelsby Børnehave,Dansk Skoleforening for Sydslesvig e.V.,Herr Schönhoff,Neuer Weg 9,24942,65530,07:15-16:15,50,1,2,0,0,0,0,3,X,
+Engelsby,Engelsby,Kirche,Herr Plorin,Brahmsstr. 13,24943,61248,07:00-16:00,80,0,4,0,0,0,0,4,X,
+Engelsby,Engelsby,Stadt,Frau Rothgaenger,Taruper Weg 5,24943,61735,07:00-16:00,75,0,3,0,0,1,0,4,X,Naturgr. im Weesrieser Gehölz
+Engelsby,Jupiterweg,ADS,Frau Callsen,Jupiterweg 30,24943,62234,07:00-16:00,80,2,3,0,0,0,0,5,X,
+Engelsby,Engelsby,ADS,Frau Rathmann,Engelsbyer Str. 139,24943,64210,07:30-16:00,15,0,0,0,0,1,0,1,X,Naturgr. im Waldstück Tremmerup/Munkholz
+Engelsby,Engelsby Børne- og Ungdomshus,Sydslesvigs danske Ungdomsforeninger,Herr Döstrup,Brahmsstr. 6,24943,63946,11:00-18:00,90,0,0,5,0,0,0,5,X,1 Naturhortgruppe
+Tarup,Tarup Børnehave,Dansk Skoleforening for Sydslesvig e.V.,Herr Schönhoff,Taruper Hauptstr. 53,24939,64593,07:15-15:15,40,0,2,0,0,0,0,2,Nein,
+Tarup,Tarup,Stadt,Frau Wüstenberg,Sandbergweg 17a,24943,63800,07:00-16:00,80,0,4,0,0,0,0,4,X,
+Tarup,KiTa Kiwi (Kinder & Wirtschaft),Adelby1 Kinder- und Jugenddienste gGmbH,Frau Jerschewski,Hochfelder Landstr. 1,24943,49305220,07:30-21:30,105,3,0,0,4,1,0,8,X,frühere und spätere Abholzeiten möglich; Naturgr. auf Grundstück neben der Kita
+Tarup,Ringvejens Vuggestue,Dansk Skoleforening for Sydslesvig e.V.,Frau Rasmussen,Ringstr. 2,24943,50548600,07:00-16:00,60,6,0,0,0,0,0,6,X,
