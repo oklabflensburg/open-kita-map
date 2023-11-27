@@ -21,8 +21,51 @@ except Exception as e:
     raise(e)
 
 
+def get_coordinates(lookup):
+    g = GoogleV3(api_key=api_key)
+    locations = g.geocode(query=lookup, exactly_one=True)
+
+    coords = []
+
+    try:
+        if not hasattr(locations, 'raw'):
+            return loc
+
+        try:
+            coords = [locations.latitude, locations.longitude]
+        except (TypeError, AttributeError, IndexError) as e:
+            print(e)
+    except Exception as e:
+        print(e)
+
+    return coords
+
+
+def generate_geojson(features):
+    fc = []
+
+    crs = {
+        'type': 'name',
+        'properties': {
+            'name': 'urn:ogc:def:crs:OGC:1.3:CRS84'
+        }
+    }
+
+    for feature in features:
+        coordinates = feature['geometry']['coordinates']
+
+        geometry = Point((float(coordinates[0]), float(coordinates[1])))
+        properties = feature['properties']
+
+        fc.append(Feature(geometry=geometry, properties=properties))
+
+    c = FeatureCollection(fc, crs=crs)
+
+    return c
+
+
 def read_input(src):
-    result = []
+    features = []
 
     with open(src, 'r') as f:
         reader = csv.DictReader(f)
@@ -30,57 +73,43 @@ def read_input(src):
         for i in reader:
             address = i['address'].replace(' ', '+')
             postal_code = i['postal_code'].strip()
+            phone_number = i['phone_number'].strip()
             district = i['district'].strip()
 
             lookup = f'{address}+{postal_code}+{district}+Flensburg'
-            coords = get_coordinates(lookup)
 
-            d = {}
-            d['geometry'] = coords
-            d['district'] = district
-            d['postal_code'] = postal_code
-            d['address'] = i['address'].strip()
-            d['facility'] = i['facility'].strip()
-            d['director'] = i['director'].strip()
-            d['institution'] = i['institution'].strip()
-            d['integrational'] = i['integrational'].strip()
-            d['opening_hours'] = i['opening_hours'].strip()
-            d['phone_number'] = i['phone_number'].strip()
-            d['free_places'] = i['free_places'].strip()
-            d['group_6_14'] = i['group_6_14'].strip()
-            d['group_0_3'] = i['group_0_3'].strip()
-            d['group_3_6'] = i['group_3_6'].strip()
-            d['group_1_6'] = i['group_1_6'].strip()
-            d['nature_3-6'] = i['nature_3-6'].strip()
-            d['groups_total'] = i['groups_total'].strip()
-            d['lunch_offer'] = True if i['lunch_offer'].strip() == 'X' else False
-            d['comments'] = i['comments'].strip()
+            properties = {}
+            g = {}
 
-            result.append(d)
+            properties['district'] = district
+            properties['postal_code'] = postal_code
+            properties['address'] = i['address'].strip()
+            properties['facility'] = i['facility'].strip()
+            properties['director'] = i['director'].strip()
+            properties['phone_number'] = f'0461/{phone_number}'
+            properties['institution'] = i['institution'].strip()
+            properties['opening_hours'] = i['opening_hours'].strip()
+            properties['integrational'] = int(i['integrational'].strip())
+            properties['free_places'] = int(i['free_places'].strip())
+            properties['group_6_14'] = int(i['group_6_14'].strip())
+            properties['group_0_3'] = int(i['group_0_3'].strip())
+            properties['group_3_6'] = int(i['group_3_6'].strip())
+            properties['group_1_6'] = int(i['group_1_6'].strip())
+            properties['nature_3-6'] = int(i['nature_3-6'].strip())
+            properties['groups_total'] = int(i['groups_total'].strip())
+            properties['lunch_offer'] = True if i['lunch_offer'].strip() == 'X' else False
+            properties['comments'] = i['comments'].strip()
 
-    return result
+            g['coordinates'] = get_coordinates(lookup)
 
+            f = {
+                'geometry': g,
+                'properties': properties
+            }
 
-def get_coordinates(lookup):
-    g = GoogleV3(api_key=api_key)
-    locations = g.geocode(query=lookup, exactly_one=True)
+            features.append(f)
 
-    loc = {
-        'coordinates': []
-    }
-
-    try:
-        if not hasattr(locations, 'raw'):
-            return loc
-
-        try:
-            loc['coordinates'] = [locations.latitude, locations.longitude]
-        except (TypeError, AttributeError, IndexError) as e:
-            print(e)
-    except Exception as e:
-        print(e)
-
-    return loc
+    return features
 
 
 @click.command()
@@ -88,12 +117,13 @@ def get_coordinates(lookup):
 def main(src):
     filename = Path(src).stem
     parent = str(Path(src).parent)
-    dest = Path(f'{parent}/{filename}.json')
+    dest = Path(f'{parent}/{filename}.geojson')
 
-    result = read_input(src)
+    features = read_input(src)
+    collection = generate_geojson(features)
 
-    with open(dest, 'w') as f:
-        json.dump(result, f)
+    with open(dest, 'w', encoding='utf8') as f:
+        json.dump(collection, f, ensure_ascii=False)
 
 
 if __name__ == '__main__':
