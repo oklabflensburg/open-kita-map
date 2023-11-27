@@ -54,7 +54,7 @@ def generate_geojson(features):
     for feature in features:
         coordinates = feature['geometry']['coordinates']
 
-        geometry = Point((float(coordinates[0]), float(coordinates[1])))
+        geometry = Point((float(coordinates[1]), float(coordinates[0])))
         properties = feature['properties']
 
         fc.append(Feature(geometry=geometry, properties=properties))
@@ -95,7 +95,7 @@ def read_input(src):
             properties['group_0_3'] = int(i['group_0_3'].strip())
             properties['group_3_6'] = int(i['group_3_6'].strip())
             properties['group_1_6'] = int(i['group_1_6'].strip())
-            properties['nature_3-6'] = int(i['nature_3-6'].strip())
+            properties['nature_3_6'] = int(i['nature_3_6'].strip())
             properties['groups_total'] = int(i['groups_total'].strip())
             properties['lunch_offer'] = True if i['lunch_offer'].strip() == 'X' else False
             properties['comments'] = i['comments'].strip()
