@@ -1,4 +1,4 @@
-Stadtteil,Einrichtung,Träger,KiTa Leitung,Straße,PLZ,Telefon,Öffnungszeiten,Plätze,Krippen-Gruppen (0-3 J.),Kindergarten Gruppen (3-6 J.),Hort-Gruppen (6-14 J.),Altersgem. -Gruppen (1-6 J.),Natur-Gruppen (3-6 J.),I-Gruppen,Gruppen,Mittagessen,Bemerkungen
+district,facility,institution,director,address,postal_code,phone_number,opening_hours,free_places,group_0_3,group_3_6,group_6_14,group_1_6,nature_3-6,integrational,groups_total,lunch_offer,comments
 Altstadt,Kinderhaus,DKSB,Frau Droemert,Marientreppe 10,24939,3132978,07:30-16:30,60,1,1,1,1,0,0,4,X,
 Neustadt,Nystadens Børne- og Ungdomshus,Sydslesvigs danske Ungdomsforeninger,Herr Mülhausen,Junkerhohlweg 20,24939,43136,11:30-18:00,75,0,0,4,0,0,0,4,X,
 Neustadt,Neustadt,Stadt,Herr Hoffmann,Jens-Due-Weg 2,24939,852157,07:00-19:00,133,0,2,5,0,1,0,8,X,Naturgr. bis 16.00 im Wald und am Strand
