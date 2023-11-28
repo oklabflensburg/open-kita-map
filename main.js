@@ -125,23 +125,39 @@ function renderFeatureDetails(feature) {
     let detailOutput = '';
 
     if (facility !== '') {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-1 text-xl"><strong>${facility}</strong></li>`
+        detailOutput += `<li class="pb-2 px-2 pt-1 text-xl"><strong>${facility}</strong></li>`
     }
 
     if (address !== '' && postal_code !== '') {
         detailOutput += `<li class="last-of-type:pb-2 px-2 py-1">${address}<br>${postal_code} Flensburg</li>`
     }
 
-    if (director !== '') {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Ansprechpartner</strong><br>${director}</li>`
+    if (childcare_places > 0 && groups_total > 0) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${childcare_places}</strong> Plätze in <strong>${groups_total}</strong> Gruppen</li>`
     }
 
-    if (institution !== '') {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Träger</strong><br>${institution}</li>`
+    if (group_6_14 > 0) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${group_6_14}</strong> Hort für 6 - 14 jährige</li>`
+    }   
+
+    if (group_0_3 > 0) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${group_0_3}</strong> Krippengruppen für 1 - 3 jährige</li>`
+    }   
+
+    if (group_3_6 > 0) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${group_3_6}</strong> Regelgruppen für 3 - 6 jährige</li>`
+    }   
+
+    if (group_1_6 > 0) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${group_1_6}</strong> Altersgemischte Gruppen für 1 - 6 jährige</li>`
+    }   
+
+    if (nature_3_6 > 0) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${nature_3_6}</strong> Naturgruppen für 3 - 6 jährige</li>`
     }
 
-    if (phone_number !== '') {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Telefon</strong><br>${phone_number}</li>`
+    if (lunch_offer === true) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Mittagsessen:</strong> Ja</li>`
     }
 
     if (opening_hours !== '') {
@@ -152,36 +168,16 @@ function renderFeatureDetails(feature) {
         detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Bemerkungen</strong><br>${comments}</li>`
     }
 
-    if (lunch_offer === true) {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Mittagsessen:</strong> Ja</li>`
+    if (institution !== '') {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Träger</strong><br>${institution}</li>`
     }
 
-    if (childcare_places > 0) {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${childcare_places}</strong> Plätze</li>`
+    if (phone_number !== '') {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Telefon</strong><br>${phone_number}</li>`
     }
 
-    if (groups_total > 0) {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${groups_total}</strong> Gruppen</li>`
-    }
-
-    if (group_6_14 > 0) {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${group_6_14}</strong> Hort für 6 - 14 jährige</li>`
-    }
-
-    if (group_0_3 > 0) {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${group_0_3}</strong> Krippengruppen für 1 - 3 jährige</li>`
-    }
-
-    if (group_3_6 > 0) {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${group_3_6}</strong> Regelgruppen für 3 - 6 jährige</li>`
-    }
-
-    if (group_1_6 > 0) {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${group_1_6}</strong> Altersgemischte Gruppen für 1 - 6 jährige</li>`
-    }   
-
-    if (nature_3_6 > 0) {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${nature_3_6}</strong> Naturgruppen für 3 - 6 jährige</li>`
+    if (director !== '') {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Ansprechpartner</strong><br>${director}</li>`
     }
 
     document.querySelector('#details').classList.remove('hidden')
