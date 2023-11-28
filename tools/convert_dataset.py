@@ -90,7 +90,7 @@ def read_input(src):
             properties['institution'] = i['institution'].strip()
             properties['opening_hours'] = i['opening_hours'].strip()
             properties['integrational'] = int(i['integrational'].strip())
-            properties['free_places'] = int(i['free_places'].strip())
+            properties['childcare_places'] = int(i['childcare_places'].strip())
             properties['group_6_14'] = int(i['group_6_14'].strip())
             properties['group_0_3'] = int(i['group_0_3'].strip())
             properties['group_3_6'] = int(i['group_3_6'].strip())

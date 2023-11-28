@@ -112,7 +112,7 @@ function renderFeatureDetails(feature) {
     const institution = feature.properties.institution
     const opening_hours = feature.properties.opening_hours
     const integrational = feature.properties.integrational
-    const free_places = feature.properties.free_places
+    const childcare_places = feature.properties.childcare_places
     const group_6_14 = feature.properties.group_6_14
     const group_0_3 = feature.properties.group_0_3
     const group_3_6 = feature.properties.group_3_6
@@ -156,32 +156,32 @@ function renderFeatureDetails(feature) {
         detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Mittagsessen:</strong> Ja</li>`
     }
 
-    if (groups_total > 0) {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Gruppen:</strong> ${groups_total}</li>`
+    if (childcare_places > 0) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${childcare_places}</strong> Plätze</li>`
     }
 
-    if (free_places > 0) {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Plätze:</strong> ${free_places}</li>`
+    if (groups_total > 0) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${groups_total}</strong> Gruppen</li>`
     }
 
     if (group_6_14 > 0) {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Hort:</strong> ${group_6_14}</li>`
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${group_6_14}</strong> Hort für 6 - 14 jährige</li>`
     }
 
     if (group_0_3 > 0) {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>0 - 3 Jahre:</strong> ${group_0_3}</li>`
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${group_0_3}</strong> Krippengruppen für 1 - 3 jährige</li>`
     }
 
     if (group_3_6 > 0) {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>3 - 6 Jahre:</strong> ${group_3_6}</li>`
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${group_3_6}</strong> Regelgruppen für 3 - 6 jährige</li>`
     }
 
     if (group_1_6 > 0) {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>1 - 6 Jahre:</strong> ${group_1_6}</li>`
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${group_1_6}</strong> Altersgemischte Gruppen für 1 - 6 jährige</li>`
     }   
 
     if (nature_3_6 > 0) {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Naturgruppe 3 - 6 Jahre:</strong> ${nature_3_6}</li>`
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>${nature_3_6}</strong> Naturgruppen für 3 - 6 jährige</li>`
     }
 
     document.querySelector('#details').classList.remove('hidden')
@@ -230,6 +230,9 @@ function marker(data) {
 
                 if (currentZoom < 15) {
                     map.setView(e.latlng, 15)
+                }
+                else {
+                    map.setView(e.latlng, currentZoom)
                 }
 
                 renderFeatureDetails(e.target.feature)
