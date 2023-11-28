@@ -122,10 +122,70 @@ function renderFeatureDetails(feature) {
     const lunch_offer = feature.properties.lunch_offer
     const comments = feature.properties.comments
 
-    console.log(feature.properties)
+    let detailOutput = '';
 
-    document.getElementById('details').classList.remove('hidden')
-    document.getElementById('address').innerHTML = feature.properties
+    if (facility !== '') {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-1 text-xl"><strong>${facility}</strong></li>`
+    }
+
+    if (address !== '' && postal_code !== '') {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 py-1">${address}<br>${postal_code} Flensburg</li>`
+    }
+
+    if (director !== '') {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Ansprechpartner</strong><br>${director}</li>`
+    }
+
+    if (institution !== '') {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Träger</strong><br>${institution}</li>`
+    }
+
+    if (phone_number !== '') {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Telefon</strong><br>${phone_number}</li>`
+    }
+
+    if (opening_hours !== '') {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Öffnungszeiten</strong><br>${opening_hours} Uhr</li>`
+    }
+
+    if (comments !== '') {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Bemerkungen</strong><br>${comments}</li>`
+    }
+
+    if (lunch_offer === true) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Mittagsessen:</strong> Ja</li>`
+    }
+
+    if (groups_total > 0) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Gruppen:</strong> ${groups_total}</li>`
+    }
+
+    if (free_places > 0) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Plätze:</strong> ${free_places}</li>`
+    }
+
+    if (group_6_14 > 0) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Hort:</strong> ${group_6_14}</li>`
+    }
+
+    if (group_0_3 > 0) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>0 - 3 Jahre:</strong> ${group_0_3}</li>`
+    }
+
+    if (group_3_6 > 0) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>3 - 6 Jahre:</strong> ${group_3_6}</li>`
+    }
+
+    if (group_1_6 > 0) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>1 - 6 Jahre:</strong> ${group_1_6}</li>`
+    }   
+
+    if (nature_3_6 > 0) {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Naturgruppe 3 - 6 Jahre:</strong> ${nature_3_6}</li>`
+    }
+
+    document.querySelector('#details').classList.remove('hidden')
+    document.querySelector('#detailList').innerHTML = detailOutput
 
     document.querySelector('title').innerHTML = facility
     document.querySelector('meta[property="og:title"]').setAttribute('content', facility)
