@@ -110,6 +110,7 @@ function renderFeatureDetails(feature) {
     const director = feature.properties.director
     const phone_number = feature.properties.phone_number
     const institution = feature.properties.institution
+    const prerequisite = feature.properties.prerequisite
     const opening_hours = feature.properties.opening_hours
     const integrational = feature.properties.integrational
     const childcare_places = feature.properties.childcare_places
@@ -172,8 +173,12 @@ function renderFeatureDetails(feature) {
         detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Träger</strong><br>${institution}</li>`
     }
 
+    if (prerequisite !== '') {
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Aufnahmekriterien</strong><br><a class="text-blue-600 hover:text-blue-500 focus:    text-blue:500" target="_blank" href="${prerequisite}">Externes PDF Dokument öffnen</a></li>`
+    }
+
     if (phone_number !== '') {
-        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Telefon</strong><br>${phone_number}</li>`
+        detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Telefon</strong><br><a class="text-blue-600 hover:text-blue-500 focus:text-blue:500" href="tel:${phone_number}">${phone_number}</a></li>`
     }
 
     if (director !== '') {
