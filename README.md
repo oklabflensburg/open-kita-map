@@ -1,6 +1,12 @@
 # Kitafinder Flensburg
 
-Diese kleine Seite sollen allen Helfen welche eine geignete Kindertagesstätte in Flensburg finden wollen.
+Der Kiafinder Flensburg kann allen Helfen, welche eine geignete Kindertagesstätte in Flensburg finden wollen.
+
+
+![Kitafinder Flensburg](https://raw.githubusercontent.com/oklabflensburg/open-kita-map/main/screenshot_kitafinder_flensburg.jpg)
+
+_Haftungsausschluss: Dieses Repository und die zugehörige Datenbank befinden sich derzeit in einer Beta-Version. Einige Aspekte des Codes und der Daten können noch Fehler enthalten. Bitte kontaktieren Sie uns per E-Mail oder erstellen Sie ein Issue auf GitHub, wenn Sie einen Fehler entdecken._
+
 
 
 ## Datenquelle
