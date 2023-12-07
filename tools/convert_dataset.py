@@ -88,6 +88,7 @@ def read_input(src):
             properties['director'] = i['director'].strip()
             properties['phone_number'] = f'0461/{phone_number}'
             properties['institution'] = i['institution'].strip()
+            properties['prerequisite'] = i['prerequisite'].strip() if i['prerequisite'] else ''
             properties['opening_hours'] = i['opening_hours'].strip()
             properties['integrational'] = int(i['integrational'].strip())
             properties['childcare_places'] = int(i['childcare_places'].strip())

@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS childcare_facility (
   facility VARCHAR,
   director VARCHAR,
   institution VARCHAR,
+  prerequisite VARCHAR,
   phone_number VARCHAR,
   opening_hours VARCHAR,
   integrational VARCHAR,

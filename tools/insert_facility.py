@@ -46,6 +46,7 @@ def insert_object(cur, properties, geometry):
     comments = properties['comments'] if properties['comments'] else None
     lunch_offer = properties['lunch_offer'] if properties['lunch_offer'] else None
     institution = properties['institution'] if properties['institution'] else None
+    prerequisite = properties['prerequisite'] if properties['prerequisite'] else None
     phone_number = properties['phone_number'] if properties['phone_number'] else None
     opening_hours = properties['opening_hours'] if properties['opening_hours'] else None
     integrational = properties['integrational'] if properties['integrational'] else None
@@ -62,15 +63,15 @@ def insert_object(cur, properties, geometry):
 
     sql = '''
         INSERT INTO childcare_facility (postal_code, district, address, facility,
-            director, institution, phone_number, opening_hours, integrational,
+            director, institution, prerequisite, phone_number, opening_hours, integrational,
             childcare_places, lunch_offer, comments, group_6_14, group_0_3,
             group_3_6, group_1_6, nature_3_6, groups_total, wkb_geometry)
-        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
     '''
 
     try:
         cur.execute(sql, (postal_code, district, address, facility, director,
-            institution, phone_number, opening_hours, integrational,
+            institution, prerequisite, phone_number, opening_hours, integrational,
             childcare_places, lunch_offer, comments, group_6_14, group_0_3,
             group_3_6, group_1_6, nature_3_6, groups_total, wkb_geometry))
     except UniqueViolation as e:
