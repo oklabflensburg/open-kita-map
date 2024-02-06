@@ -12,6 +12,7 @@ _Haftungsausschluss: Dieses Repository und die zugehörige Datenbank befinden si
 ## Datenquelle
 
 - https://www.flensburg.de/media/custom/2306_2545_1.PDF
+- https://opendata.schleswig-holstein.de/dataset/kindertagesstaetten-2024-01-17
 
 
 
