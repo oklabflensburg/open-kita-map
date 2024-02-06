@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#" lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Kindertagesstätten in Flensburg</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../static/favicon.ico">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:title" content="Kindertagesstätten in Flensburg">
+    <meta property="og:site_name" content="Stadtplan der Kindertagesstätten in Flensburg">
+    <meta property="og:url" content="https://kitas-in-flensburg.de">
+    <meta property="og:description" content="Der Kitafinder Flensburg enthält Kitas sämtlicher Träger und gibt Aufschluss über Gruppengrößen, Stadtteil und Besonderheiten">
+    <meta property="og:type" content="website">
+    <meta content="Der Kitafinder Flensburg enthält Kitas sämtlicher Träger und gibt Aufschluss über Gruppengrößen, Stadtteil und Besonderheiten" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="h-screen overflow-auto bg-slate-50">
+        <div class="md:flex">
+            <div class="w-full sm:w-8/12 md:w-7/12 lg:w-9/12 h-96 overflow-hidden" id="map"></div>
+            <div class="w-full sm:w-4/12 md:w-5/12 lg:w-3/12 sm:overflow-scroll bg-gray-100" id="filter">
+                <div class="py-2 px-3 mb-4 lg:mb-8">
+                    <h1 class="tracking-normal leading-normal font-bold text-2xl md:text-3xl lg:text-4xl mb-1">Kitas in Flensburg</h1>
+                    <h2><a href="/" class="text-xl md:text-2xl text-gray-700 hover:text-blue-700 focus:text-blue-800" title="Kitafinder Flensburg">Kitafinder Flensburg</a></h2>
+                </div>
+                <div class="hidden leading-normal text-md lg:text-lg bg-white border border-slate-300 rounded text-black mb-3 lg:mb-6 mx-3 p-3" id="details">
+                    <ul id="detailList"></ul>
+                </div>
+                <div class="mt-3 md:mt-6 py-2 px-3" id="about">
+                   <h3 class="font-bold text-xl md:text-2xl mb-1">Hintergrund</h3>
+                   <p class="font-normal leading-normal text-md lg:text-lg mb-3 md:mb-6">Die Idee, einen Kitafinder für Flensburg zu entwickeln, ist aus der eigenen Suche nach einer Kita für den Kleinen entstanden. Auf der <a class="text-blue-600 hover:text-blue-400 focus:text-blue-400" href="https://www.flensburg.de/Kultur-Bildung/Bildungsb%C3%BCro/Kindertagesbetreuung/Kindertagesst%C3%A4tten" target="_blank">städtischen Website</a> finden sich zwar Kontaktdetails zu den städtischen Kindertagesstätten und ein <a class="text-blue-600 hover:text-blue-400 focus:text-blue-400" href="https://www.flensburg.de/media/custom/2306_2545_1.PDF" target="_blank">Link</a> zu einer PDF Datei mit einer Liste aller Kindertagesstätten in Flensburg, jedoch fehlt eine übersichtliche Karte, die alle Kitas anzeigt. Aus dieser Fragestellung heraus ist diese Karte entstanden, um anderen Eltern die Suche nach einem Kitaplatz zu erleichtern. Falls Sie Anregungen, Kritik oder Ergänzungen haben, schreiben Sie uns bitte eine <a class="text-blue-600 hover:text-blue-400 focus:text-blue-400" href="mailto:oklabflensburg@grain.one">E-Mail</a>.</p>
+                   <h3 class="font-bold text-xl md:text-2xl mb-1">Datenquelle</h3>
+                   <p class="font-normal leading-normal text-md lg:text-lg mb-3 md:mb-6">Ein Großteil der Informationen der Kindertagesstätten wurde aus dem <a class="text-blue-600 hover:text-blue-400 focus:text-blue-400" href="https://opendata.schleswig-holstein.de/dataset/kindertagesstaetten-2024-01-17" target="_blank">Datensatz</a> des Open Data Portals Schleswig-Holstein bezogen. Zusätzlich haben wir weitere Daten aus der <a class="text-blue-600 hover:text-blue-400 focus:text-blue-400" href="https://www.flensburg.de/media/custom/2306_2545_1.PDF" target="_blank">Liste aller Kindertagesstätten</a> in Flensburg genutzt. Die Kartendarstellung wird von engagierten Eltern und ehrenamtlichen Mitgliedern des <a class="text-blue-600 hover:text-blue-400 focus:text-blue-400" href="https://oklabflensburg.de" target="_blank">OK Lab Flensburg</a> entwickelt.</p>
+                   <h3 class="font-bold text-xl md:text-2xl mb-1">Quellcode</h3>
+                   <p class="font-normal leading-normal text-md lg:text-lg">Der aktuelle Entwicklungsstand kann auf <a class="text-blue-600 hover:text-blue-400 focus:text-blue-400" href="https://github.com/oklabflensburg/open-kita-map" target="_blank">GitHub</a> eingesehen werden und von jeder Kommune, Stadt oder Land kostenfrei und lizenzfrei genutzt und redeployed werden.</p>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-gray-200 h-[4vh] border-t md:border-t border-gray-300 text-sm flex justify-center items-center">
+            <a class="inline-block text-gray-700 hover:text-blue-800 focus:text-blue-800" href="./impressum.html">Impressum</a> <span class="inline-block text-gray-700 px-3">|</span> <a class="inline-block text-gray-700 hover:text-blue-800 focus:text-blue-800" href="./impressum.html#privacypolicy">Datenschutzerklärung</a> <span class="inline-block text-gray-700 px-3">|</span> <a class="inline-block text-gray-700 hover:text-blue-800 focus:text-blue-800" href="./lizenz.html">Lizenz</a>
+        </footer>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
