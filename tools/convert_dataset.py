@@ -4,6 +4,7 @@ import os
 import csv
 import click
 import json
+import re
 
 from dotenv import load_dotenv
 from geojson import FeatureCollection, Feature, Point
@@ -19,6 +20,48 @@ try:
     api_key = os.getenv('API_KEY')
 except Exception as e:
     raise(e)
+
+
+def remove_chars(string):
+    slug = string
+
+    tpl = (('©', ''), ('"', ''), ('\\', ''), ('&', 'und'), ('(', ''), (')', ''))
+
+    for item1, item2 in tpl:
+        slug = slug.replace(item1, item2)
+
+    return slug
+
+
+def replace_umlauts(string):
+    slug = string
+
+    tpl = (('ü', 'ue'), ('Ü', 'Ue'), ('ä', 'ae'), ('Ä', 'Ae'), ('ö', 'oe'), ('Ö', 'Oe'), ('ß', 'ss'), ('ø', 'oe'))
+
+    for item1, item2 in tpl:
+        slug = slug.replace(item1, item2)
+
+    return slug
+
+
+def get_slug(values):
+    parts = []
+
+    for value in values:
+        parts.append(re.sub('[\d\s!@#\$%\^&\*\(\)\[\]{};:,\./<>\?\|`~\-=_\+]', ' ', value))
+
+    slug = ' '.join(list(dict.fromkeys(parts))).lower()
+    slug = remove_chars(slug)
+    slug = replace_umlauts(slug)
+    slug = re.sub(r'\s+', ' ', slug).replace(' ', '-')
+    slug = slug.replace('str-', 'strasse-')
+
+    if 'kita' not in slug and 'krippe' not in slug:
+        slug = f'kita-{slug}'
+
+    print(slug)
+
+    return slug
 
 
 def get_coordinates(lookup):
@@ -79,7 +122,8 @@ def read_input(src):
             lookup = f'{address}+{postal_code}+{district}+Flensburg'
 
             properties = {}
-            g = {}
+            geometries = {}
+            values = []
 
             properties['district'] = district
             properties['postal_code'] = postal_code
@@ -101,10 +145,21 @@ def read_input(src):
             properties['lunch_offer'] = True if i['lunch_offer'].strip() == 'X' else False
             properties['comments'] = i['comments'].strip()
 
-            g['coordinates'] = get_coordinates(lookup)
+            if i['facility']:
+                for item in re.split(r'[ |-]', i['facility']):
+                    values.append(item)
+
+            if i['address']:
+                for item in re.split(r'[ |-]', i['address']):
+                    values.append(item.replace('Str.', 'strasse'))
+
+            values.append('Flensburg')
+
+            properties['slug'] = get_slug(values)
+            geometries['coordinates'] = get_coordinates(lookup)
 
             f = {
-                'geometry': g,
+                'geometry': geometries,
                 'properties': properties
             }
 

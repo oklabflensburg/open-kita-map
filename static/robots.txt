@@ -1,3 +1,5 @@
 User-Agent: *
 Disallow: /lizenz.html
 Disallow: /impressum.html
+
+Sitemap: https://kitas-in-flensburg.de/sitemap.xml
