@@ -12,7 +12,6 @@ import markerDefault from 'url:../static/marker-icon-default.webp'
 import markerSelected from 'url:../static/marker-icon-active.webp'
 
 
-
 fetch(kitas, {
   method: 'GET'
 }).then((response) => response.json()).then((data) => {
@@ -32,26 +31,12 @@ fetch(districts, {
 
 
 const layerStyle = {
-  transparent: {
-    color: 'transparent',
-    fillColor: 'transparent',
-    fillOpacity: 0.7,
-    opacity: 0.6,
-    weight: 1
-  },
   standard: {
     color: '#fff',
     fillColor: '#11aa44',
     fillOpacity: 0.4,
     opacity: 0.6,
     weight: 3
-  },
-  click: {
-    color: '#fff',
-    fillColor: '#002db4',
-    fillOpacity: 0.4,
-    opacity: 0.8,
-    weight: 4
   }
 }
 
@@ -71,6 +56,7 @@ L.tileLayer.wms('https://sgx.geodatenzentrum.de/wms_basemapde?SERVICE=WMS&Reques
 
 let geocoder = L.Control.Geocoder.nominatim()
 let previousSelectedMarker = null
+let slugUrlActive = null
 
 
 if (typeof URLSearchParams !== 'undefined' && location.search) {
@@ -108,7 +94,15 @@ function addDistrictsLayer(data) {
 }
 
 
+function capitalizeEachWord(str) {
+  return str.replace(/-/g, ' ').replace(/\w\S*/g, function (txt) {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+  })
+}
+
+
 function renderFeatureDetails(feature) {
+  const slug = feature.properties.slug
   const district = feature.properties.district
   const address = feature.properties.address
   const postal_code = feature.properties.postal_code
@@ -128,6 +122,12 @@ function renderFeatureDetails(feature) {
   const groups_total = feature.properties.groups_total
   const lunch_offer = feature.properties.lunch_offer
   const comments = feature.properties.comments
+
+  const title = `${capitalizeEachWord(slug)} - Schulen in Flensburg`
+
+  document.querySelector('title').innerHTML = title
+  document.querySelector('meta[property="og:title"]').setAttribute('content', title)
+  document.querySelector('meta[property="og:url"]').setAttribute('content', `${window.location.href}${slug}`)
 
   let detailOutput = ''
 
@@ -203,7 +203,7 @@ const defaultIcon = L.icon({
   iconUrl: markerDefault,
   iconSize: [25, 35],
   iconAnchor: [12, 35],
-  tooltipAnchor: [0, -35]
+  tooltipAnchor: [1, -36]
 })
 
 
@@ -211,7 +211,7 @@ const selectedIcon = L.icon({
   iconUrl: markerSelected,
   iconSize: [25, 35],
   iconAnchor: [12, 35],
-  tooltipAnchor: [0, -35]
+  tooltipAnchor: [1, -36]
 })
 
 
@@ -223,6 +223,18 @@ function marker(data) {
 
   const geojsonGroup = L.geoJSON(data, {
     onEachFeature(feature, layer) {
+      const slug = String(feature.properties.slug)
+      const path = decodeURIComponent(window.location.pathname)
+
+      if (slug === path.slice(1)) {
+        document.querySelector('#about').classList.add('hidden')
+        layer.setIcon(selectedIcon)
+        previousSelectedMarker = layer
+        renderFeatureDetails(feature)
+        map.setView(layer._latlng, 18)
+        slugUrlActive = true
+      }
+
       layer.on('click', function (e) {
         document.getElementById('filter').scrollTo({
           top: 0,
@@ -234,11 +246,11 @@ function marker(data) {
         if (currentZoom < 15) {
           map.setView(e.latlng, 15)
         }
-        else {
-          map.setView(e.latlng, currentZoom)
-        }
 
+        document.querySelector('#about').classList.add('hidden')
+        map.setView(e.latlng, 18)
         renderFeatureDetails(e.target.feature)
+        history.pushState({ page: slug }, slug, slug)
       })
     },
     pointToLayer(feature, latlng) {
@@ -264,3 +276,7 @@ function marker(data) {
   markers.addLayer(geojsonGroup)
   map.addLayer(markers)
 }
+
+window.addEventListener('popstate', (event) => {
+  console.debug(`location: ${document.location}, state: ${JSON.stringify(event.state)}`)
+})
