@@ -188,7 +188,7 @@ function renderFeatureDetails(feature) {
   }
 
   if (director !== '') {
-    detailOutput += `<li class="pt-2"><strong>Ansprechpartner</strong><br>${director}</li>`
+    detailOutput += `<li class="pt-2"><strong>Leitung</strong><br>${director}</li>`
   }
 
   document.querySelector('#details').classList.remove('hidden')
