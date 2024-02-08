@@ -9,7 +9,7 @@ import kitas from 'url:../data/kitas_in_flensburg.geojson'
 import districts from 'url:../data/flensburg_stadtteile.geojson'
 
 import markerDefault from 'url:../static/marker-icon-default.webp'
-import markerSelected from 'url:../static/marker-icon-active.webp'
+import markerActive from 'url:../static/marker-icon-active.webp'
 
 
 fetch(kitas, {
@@ -201,17 +201,17 @@ function renderFeatureDetails(feature) {
 
 const defaultIcon = L.icon({
   iconUrl: markerDefault,
-  iconSize: [25, 35],
-  iconAnchor: [12, 35],
-  tooltipAnchor: [1, -36]
+  iconSize: [30, 36],
+  iconAnchor: [15, 36],
+  tooltipAnchor: [0, -37]
 })
 
 
 const selectedIcon = L.icon({
-  iconUrl: markerSelected,
-  iconSize: [25, 35],
-  iconAnchor: [12, 35],
-  tooltipAnchor: [1, -36]
+  iconUrl: markerActive,
+  iconSize: [30, 36],
+  iconAnchor: [15, 36],
+  tooltipAnchor: [0, -37]
 })
 
 

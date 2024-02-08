@@ -1,5 +1,10 @@
 # Kitafinder Flensburg
 
+[![Lint css files](https://github.com/oklabflensburg/open-kita-map/actions/workflows/lint-css.yml/badge.svg)](https://github.com/oklabflensburg/open-kita-map/actions/workflows/lint-css.yml)
+[![Lint html files](https://github.com/oklabflensburg/open-kita-map/actions/workflows/lint-html.yml/badge.svg)](https://github.com/oklabflensburg/open-kita-map/actions/workflows/lint-html.yml)
+[![Lint js files](https://github.com/oklabflensburg/open-kita-map/actions/workflows/lint-js.yml/badge.svg)](https://github.com/oklabflensburg/open-kita-map/actions/workflows/lint-js.yml)
+[![Lighthouse CI](https://github.com/oklabflensburg/open-kita-map/actions/workflows/lighthouse.yml/badge.svg)](https://github.com/oklabflensburg/open-kita-map/actions/workflows/lighthouse.yml)
+
 Der Kiafinder Flensburg kann allen Helfen, welche eine geignete Kindertagesstätte in Flensburg finden wollen.
 
 
@@ -9,10 +14,22 @@ _Haftungsausschluss: Dieses Repository und die zugehörige Datenbank befinden si
 
 
 
+
+## Hintergrund
+
+Die Idee, einen Kitafinder für Flensburg zu entwickeln, ist aus der eigenen Suche nach einer Kita für den Kleinen entstanden. Auf der [städtischen Website](https://www.flensburg.de/Kultur-Bildung/Bildungsb%C3%BCro/Kindertagesbetreuung/Kindertagesst%C3%A4tten) finden sich zwar Kontaktdetails zu den städtischen Kindertagesstätten und ein Link zu einer PDF Datei mit einer Liste aller Kindertagesstätten in Flensburg, jedoch fehlt eine übersichtliche Karte, die alle Kitas anzeigt. Aus dieser Fragestellung heraus ist diese Karte entstanden, um anderen Eltern die Suche nach einem Kitaplatz zu erleichtern.
+
+
 ## Datenquelle
 
-- https://www.flensburg.de/media/custom/2306_2545_1.PDF
-- https://opendata.schleswig-holstein.de/dataset/kindertagesstaetten-2024-01-17
+Ein Großteil der Informationen der Kindertagesstätten wurde aus dem [Datensatz](https://opendata.schleswig-holstein.de/dataset/kindertagesstaetten-2024-01-17) des Open Data Portals Schleswig-Holstein bezogen. Zusätzlich haben wir weitere Daten aus der [Liste aller Kindertagesstätten](https://www.flensburg.de/media/custom/2306_2545_1.PDF) in Flensburg genutzt. Die Kartendarstellung wird von engagierten Eltern und ehrenamtlichen Mitgliedern des [OK Lab Flensburgs](https://oklabflensburg.de) entwickelt.
+
+
+
+## Mitmachen
+
+Du kannst jederzeit ein Issue auf GitHub öffnen oder uns über oklabflensburg@grain.one schreiben
+
 
 
 
