@@ -11,6 +11,12 @@ import districts from 'url:../data/flensburg_stadtteile.geojson'
 import markerDefault from 'url:../static/marker-icon-default.webp'
 import markerActive from 'url:../static/marker-icon-active.webp'
 
+import { Env } from './env.js'
+
+
+const env = new Env()
+env.injectLinkContent('.contact-mail', 'mailto:', '', env.contactMail, 'E-Mail')
+
 
 fetch(kitas, {
   method: 'GET'
@@ -33,7 +39,7 @@ fetch(districts, {
 const layerStyle = {
   standard: {
     color: '#fff',
-    fillColor: '#11aa44',
+    fillColor: '#6ed0ef',
     fillOpacity: 0.4,
     opacity: 0.6,
     weight: 3

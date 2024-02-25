@@ -14,7 +14,6 @@ _Haftungsausschluss: Dieses Repository und die zugehörige Datenbank befinden si
 
 
 
-
 ## Hintergrund
 
 Die Idee, einen Kitafinder für Flensburg zu entwickeln, ist aus der eigenen Suche nach einer Kita für den Kleinen entstanden. Auf der [städtischen Website](https://www.flensburg.de/Kultur-Bildung/Bildungsb%C3%BCro/Kindertagesbetreuung/Kindertagesst%C3%A4tten) finden sich zwar Kontaktdetails zu den städtischen Kindertagesstätten und ein Link zu einer PDF Datei mit einer Liste aller Kindertagesstätten in Flensburg, jedoch fehlt eine übersichtliche Karte, die alle Kitas anzeigt. Aus dieser Fragestellung heraus ist diese Karte entstanden, um anderen Eltern die Suche nach einem Kitaplatz zu erleichtern.
@@ -45,6 +44,19 @@ git clone https://github.com/oklabflensburg/open-kita-map.git
 Create dot `.env` file inside root directory. Make sure to add the following content repaced by your actual values
 
 ```
+BASE_URL=http://localhost
+
+CONTACT_MAIL=mail@example.com
+CONTACT_PHONE="+49xx"
+
+PRIVACY_CONTACT_PERSON="Firstname Lastname"
+
+ADDRESS_NAME="Address Name"
+ADDRESS_STREET="Address Street"
+ADDRESS_HOUSE_NUMBER="House Number"
+ADDRESS_POSTAL_CODE="Postal Code"
+ADDRESS_CITY="City"
+
 DB_PASS=postgres
 DB_HOST=localhost
 DB_USER=postgres
