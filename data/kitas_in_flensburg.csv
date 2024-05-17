@@ -2,7 +2,7 @@ district,facility,institution,director,address,postal_code,phone_number,opening_
 Altstadt,Kinderhaus,DKSB,Frau Droemert,Marientreppe 10,24939,3132978,07:30-16:30,60,1,1,1,1,0,0,4,X,,
 Neustadt,Nystadens Børne- og Ungdomshus,Sydslesvigs danske Ungdomsforeninger,Herr Mülhausen,Junkerhohlweg 20,24939,43136,11:30-18:00,75,0,0,4,0,0,0,4,X,,
 Neustadt,Neustadt,Stadt,Herr Hoffmann,Jens-Due-Weg 2,24939,852157,07:00-19:00,133,0,2,5,0,1,0,8,X,Naturgr. bis 16.00 im Wald und am Strand,
-Neustadt,Duborg Børnehave,Dansk Skoleforening for Sydslesvig e.V.,Frau Madsen,Ritterstr. 5,24939,29823,07:15-15:15,40,0,2,0,0,0,0,2,Nein,,https://www.skoleforeningen.org/media/2132/aufnahmekriterien.pdf,
+Neustadt,Duborg Børnehave,Dansk Skoleforening for Sydslesvig e.V.,Frau Madsen,Ritterstr. 5,24939,29823,07:15-15:15,40,0,2,0,0,0,0,2,Nein,,https://www.skoleforeningen.org/media/2132/aufnahmekriterien.pdf
 Nordstadt,"Kita am Ostseebad ""Städtische Kneipp©-Kita""",Stadt,Frau Singer,Apenrader Str. 160,24939,851211,07:00-16:00,130,2,4,0,2,0,0,8,X,Kneipp-Kita,
 Nordstadt,Sortevejs Børne- og Ungdomshus,Sydslesvigs danske Ungdomsforeninger,Herr Wolhardt,Cornelius-Hansen-Weg 3,24939,42994,11:30-18:00,90,0,0,5,0,0,0,5,X,,
 Nordstadt,Alter Kupfermühlenweg,Stadt,Herr Hoffmann,Alter Kupfermühlenweg 26,24939,852243,07:30-15:30,65,0,1,0,2,1,0,4,X,"Naturgr. im Wald, Strand und Gartenkolonie",
@@ -24,7 +24,7 @@ Friesischer Berg,Stuhrsallee,Stadt,Frau Tatzel,Stuhrsallee 16/18,24937,852773,07
 Friesischer Berg,KiTa Marienallee,Adelby1 Kinder- und Jugenddienste gGmbH,Frau Rehm,Robert-Koch-Str. 3,24937,4307162,07:00-15:30,55,4,0,0,0,1,0,5,X,Naturgr. im Naturgelände bei HAS,
 Friesischer Berg,KiTa Marienallee,Adelby1 Kinder- und Jugenddienste gGmbH,Frau Rehm,Friesische Str. 150,24937,1508051,07:00-15:30,55,4,0,0,0,1,0,5,X,Naturgr. im Naturgelände bei HAS,
 Friesischer Berg,Hofkita Boreasmühle,Hofkita Boreasmühleg gGmbH,Frau Stein,Boreasmühle 8,24937,1702428972,07:30-14:30,42,1,0,0,0,2,0,3,X,auch Naturgruppen,
-Weiche,Oksevejens Børnehave,Dansk Skoleforening for Sydslesvig e.V.,kommisarische Leitung Frau Paulsen,Alter Husumer Weg 207,24941,91486,07:00-16:00,80,2,3,0,0,0,0,5,X,,https://www.skoleforeningen.org/media/2132/aufnahmekriterien.pdf
+Weiche,Oksevejens Daginstitution,Dansk Skoleforening for Sydslesvig e.V.,kommisarische Leitung Frau Paulsen,Alter Husumer Weg 207,24941,91486,07:00-16:00,80,2,3,0,0,0,0,5,X,,https://www.skoleforeningen.org/media/2132/aufnahmekriterien.pdf
 Weiche,Integrative Kneipp-Kita,Stadt,Frau Kehlitz,Bahnstr. 2,24941,852890,07:00-16:00,85,1,0,0,3,1,1,6,X,Kneipp-Kita; Naturgr. im Waldstück Mückenteich,
 Weiche,Weiche,Kirche,Frau Struve-Flor,An der Friedenskirche 20,24941,91664,07:30-15:30,35,0,1,0,1,0,0,2,X,,
 Weiche,Arche Kunterbunt,Arche Flbg. im Mühlheimer Verband freikirchlich evangelischer Gemeinden Nordwestbund e. V.,Frau Peter,Nikolaus-Matthiesen-Str. 2,24941,91702,07:30-14:00,30,1,1,0,0,0,0,2,X,,
@@ -36,7 +36,7 @@ Südstadt,Krippe Paulinchen,Kirche,Frau Petersen,Husumer Str. 44,24941,48160710,
 Südstadt,Waldorfkindergarten,Verein zur Förderung der Waldorfpädagogik Flbg. e.V.,Frau Zydeck,Valentiner Allee 1,24941,9032523,07:30-15:30,120,2,4,1,0,0,0,7,X,Spätestens bis 16.00 abholen,
 Sandberg,KiTa Preesterbarg,Adelby1 Kinder- und Jugenddienste gGmbH,Frau Feddersen,Preesterbarg 20 a,24943,670360,07:00-16:30,105,1,4,0,0,0,3,8,X,,
 Sandberg,Skt. Hans Børnehave,Dansk Skoleforening for Sydslesvig e.V.,Frau Stark,An der Johannismühle 3,24943,25554,07:15-15:15,40,0,2,0,0,0,0,2,Nein,,https://www.skoleforeningen.org/media/2132/aufnahmekriterien.pdf
-Sandberg,An der Joh.mühle,Kirche,Frau Kindel,An der Johannismühle 6,24943,28640,07:00-16:00,70,0,2,0,0,0,2,4,X,,
+Sandberg,An der Johannismühle,Kirche,Frau Kindel,An der Johannismühle 6,24943,28640,07:00-16:00,70,0,2,0,0,0,2,4,X,,
 Sandberg,Studentenwerk,Studentenwerk S-H,Herr Philippi,Thomas-Fincke-Str. 1,24943,65831,08:00-16:00,45,1,1,0,1,0,0,3,X,ab 07:00 bis 08:00 und ab 16:00 bis 17:00 Randzeiten,
 Sandberg,Kinderinsel,Kinderinsel e. V.,Frau Graudenz,Adelbylund 20,24943,5053413,07:00-16:00,80,2,0,0,4,0,0,6,X,,
 Sandberg,Schwedenheim,Stadt,Frau Geißler,Helenenallee 17,24937,852375,07:30-16:00,66,0,2,0,2,0,0,4,X,,
@@ -59,7 +59,7 @@ Mürwik,Kinder(t)raum,Kinder(t)raum,Frau Krause,Mürwiker Str. 128,24943,9993829
 Mürwik,Alle von Anfang an,Lebenshilfe gGmbH,Frau Knutzen-Johannsen,Osterallee 194,24944,50548992,07:30-15:30,10,1,0,0,0,0,0,1,X,,
 Mürwik,Ostsee Kinderhaus gUG,Ostseeschule Flbg. gGmbH,Frau Klein-Wißmann u. Herr ten Haaf,Klosterholzweg 32,24944,015150731788,07:00-17:00,151,2,2,5,0,1,0,10,X,,
 Mürwik,Mürwiker Garten,ADS,Frau Reuter,Wasserlooser Weg 2,24943,31551020,07:00-16:00,50,1,2,0,0,0,0,3,X,,
-Engelsby,Engelsby Børnehave,Dansk Skoleforening for Sydslesvig e.V.,Herr Schönhoff,Neuer Weg 9,24942,65530,07:15-16:15,50,1,2,0,0,0,0,3,X,,https://www.skoleforeningen.org/media/2132/aufnahmekriterien.pdf
+Engelsby,Engelsby Daginstitution,Dansk Skoleforening for Sydslesvig e.V.,Herr Schönhoff,Neuer Weg 9,24942,65530,07:15-16:15,50,1,2,0,0,0,0,3,X,,https://www.skoleforeningen.org/media/2132/aufnahmekriterien.pdf
 Engelsby,Engelsby,Kirche,Herr Plorin,Brahmsstr. 13,24943,61248,07:00-16:00,80,0,4,0,0,0,0,4,X,,
 Engelsby,Engelsby,Stadt,Frau Rothgaenger,Taruper Weg 5,24943,61735,07:00-16:00,75,0,3,0,0,1,0,4,X,Naturgr. im Weesrieser Gehölz,
 Engelsby,Jupiterweg,ADS,Frau Callsen,Jupiterweg 30,24943,62234,07:00-16:00,80,2,3,0,0,0,0,5,X,,
@@ -68,4 +68,4 @@ Engelsby,Engelsby Børne- og Ungdomshus,Sydslesvigs danske Ungdomsforeninger,Her
 Tarup,Tarup Børnehave,Dansk Skoleforening for Sydslesvig e.V.,Herr Schönhoff,Taruper Hauptstr. 53,24939,64593,07:15-15:15,40,0,2,0,0,0,0,2,Nein,,https://www.skoleforeningen.org/media/2132/aufnahmekriterien.pdf
 Tarup,Tarup,Stadt,Frau Wüstenberg,Sandbergweg 17a,24943,63800,07:00-16:00,80,0,4,0,0,0,0,4,X,,
 Tarup,KiTa Kiwi (Kinder & Wirtschaft),Adelby1 Kinder- und Jugenddienste gGmbH,Frau Jerschewski,Hochfelder Landstr. 1,24943,49305220,07:30-21:30,105,3,0,0,4,1,0,8,X,frühere und spätere Abholzeiten möglich; Naturgr. auf Grundstück neben der Kita,
-Tarup,Ringvejens Vuggestue,Dansk Skoleforening for Sydslesvig e.V.,Frau Rasmussen,Ringstr. 2,24943,50548600,07:00-16:00,60,6,0,0,0,0,0,6,X,https://www.skoleforeningen.org/media/2132/aufnahmekriterien.pdf
+Tarup,Ringvejens Vuggestue,Dansk Skoleforening for Sydslesvig e.V.,Frau Rasmussen,Ringstr. 2,24943,50548600,07:00-16:00,60,6,0,0,0,0,0,6,X,,https://www.skoleforeningen.org/media/2132/aufnahmekriterien.pdf

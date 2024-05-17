@@ -48,7 +48,7 @@ def get_slug(values):
     parts = []
 
     for value in values:
-        parts.append(re.sub('[\d\s!@#\$%\^&\*\(\)\[\]{};:,\./<>\?\|`~\-=_\+]', ' ', value))
+        parts.append(re.sub(r'[\d\s!@#\$%\^&\*\(\)\[\]{};:,\./<>\?\|`~\-=_\+]', ' ', value))
 
     slug = ' '.join(list(dict.fromkeys(parts))).lower()
     slug = remove_chars(slug)
